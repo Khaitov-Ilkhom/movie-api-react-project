@@ -35,19 +35,16 @@
     font-size: 14px;
     background: transparent;
 }
-.nav button {
-    padding: 12px 35px;
-    border: 1px solid grey;
-    border-radius: 30px;
-    font-weight: 600;
-    font-size: 16px;
-    color: white;
-    background: linear-gradient(#771ec9, #880a88);
-    transition: 0.3s;
+li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 10px 20px;
 }
-
-
-.nav button:active {
-    transform: scale(0.9);
-    box-shadow: rgba(253, 249, 249, 0.35) 0 5px 20px 5px;
+.navs li a {
+    text-decoration: none;
+    color: #343232;
+    font-size: 20px;
+}
+.active {
+    border-bottom: 2px solid #343232;
 }

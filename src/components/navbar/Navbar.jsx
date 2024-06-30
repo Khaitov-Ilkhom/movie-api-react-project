@@ -12,7 +12,10 @@ const Navbar = () => {
                     <input type="text" placeholder="search"/>
                     <span><IoSearchSharp/></span>
                 </div>
-                <button>Nimadir</button>
+                <ul className="navs">
+                    <li><NavLink to="/" >Home</NavLink></li>
+                    <li><NavLink to="/singlePage" >Single</NavLink></li>
+                </ul>
             </nav>
         </div>
     )

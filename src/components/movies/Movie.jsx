@@ -1,6 +1,7 @@
 import "./Movie.css"
 import axios from "../../api/index.js"
 import {useEffect, useState} from "react";
+import {Link} from "react-router-dom";
 
 
 const Movie = () => {
@@ -20,7 +21,7 @@ const Movie = () => {
             <div className="cards">
                 {
                     movies.map(movie =>
-                        <div key={movie.id} className="card">
+                        <Link to={`/singlePage/${movie.id}`} key={movie.id} className="card">
                             <div className="poster">
                                 <img src={movie.image.original} alt="Location Unknown"/>
                             </div>
@@ -36,7 +37,7 @@ const Movie = () => {
                                 </div>
                                 <div className="desc">{movie.summary}</div>
                             </div>
-                        </div>
+                        </Link>
                     )
                 }
             </div>
